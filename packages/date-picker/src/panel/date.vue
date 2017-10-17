@@ -89,7 +89,8 @@
               :week="week"
               :selection-mode="selectionMode"
               :first-day-of-week="firstDayOfWeek"
-              :disabled-date="disabledDate">
+              :disabled-date="disabledDate"
+              :showWeekNumber="showWeekNumber">
             </date-table>
             <year-table
               ref="yearTable"
@@ -368,11 +369,11 @@
         visible: false,
         currentView: 'date',
         disabledDate: '',
-        firstDayOfWeek: 7,
+        firstDayOfWeek: 1,
         year: null,
         month: null,
         week: null,
-        showWeekNumber: false,
+        showWeekNumber: true,
         timePickerVisible: false,
         width: 0,
         format: ''
